@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  min-height: 100vh;
+  height: 1px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  font-size: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "header menu menu menu"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "main main . image"
+    "main main . extra"
+    "banner banner banner banner";
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "menu main main main"
+      "menu main main main"
+      "menu banner banner banner"
+      "menu extra extra image";
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "menu"
+      "hero"
+      "hero"
+      "main"
+      "main"
+      "banner"
+      "extra"
+      "image";
+  }
+}
+
+.header {
+  background-color: black;
+  color: white;
+
+  grid-area: header;
+}
+.menu {
+  background-color: red;
+  color: white;
+
+  grid-area: menu;
+}
+.hero {
+  background-color: blue;
+  color: white;
+
+  grid-area: hero;
+}
+.main {
+  background-color: black;
+  color: white;
+
+  grid-area: main;
+}
+.image {
+  background-color: gray;
+  color: white;
+
+  grid-area: image;
+}
+.extra {
+  background-color: green;
+  color: white;
+
+  grid-area: extra;
+}
+
+.banner {
+  background-color: yellow;
+  color: white;
+
+  grid-area: banner;
+}
