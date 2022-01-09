@@ -1,5 +1,5 @@
 # css-grid
-Built a grid layout by looking at a template I found on google images. 
+Built a grid layout by looking at a template I found on google images. Credit https://www.creativebloq.com/advice/a-comprehensive-guide-to-using-css-grid 
 # Target
 ![target](https://github.com/ReubenBarboza/css-grid/blob/master/target.jpg?raw=true)
 # Desktop
